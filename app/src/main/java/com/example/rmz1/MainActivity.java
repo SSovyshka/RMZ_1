@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             if (exitFlag) {
                 showToast("I'm done with you!", Toast.LENGTH_LONG);
                 finish();
+                return;
             }
 
             setButtonStyle(button, Color.BLACK, Color.WHITE, "Don't click on me anymore!");
