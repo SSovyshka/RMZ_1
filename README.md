@@ -20,11 +20,11 @@
 - В файлі ``` \app\src\main\res\layout\activity_main.xml ```, змінюю такі параметри
   
 ```java
-android:id="@+id/click_me_button" -- змінюю id об'єкту
-android:layout_width="200dp" -- змінюю ширину об'єкту
-android:layout_height="53dp" -- змінюю висоту об'єкту
-android:text="Don't click me!" -- змінюю текст об'єкту
-tools:ignore="HardcodedText" -- додаю параметр для ігнорування "хардкод-тексту"
+android:id="@+id/click_me_button" -- Змінюю id об'єкту
+android:layout_width="200dp" -- Змінюю ширину об'єкту
+android:layout_height="53dp" -- Змінюю висоту об'єкту
+android:text="Don't click me!" -- Змінюю текст об'єкту
+tools:ignore="HardcodedText" -- Додаю параметр для ігнорування "хардкод-тексту"
 ```
 
 <p>
@@ -34,9 +34,9 @@ tools:ignore="HardcodedText" -- додаю параметр для ігнору�
 ### Крок 3: Написання коду
 Крок 3.1: Створення змінних
 ```java
-private Button button; // змінна для кнопки
-private boolean styleFlag = false; // змінна-перемикач для стилю кнопки
-private boolean exitFlag = false; // змінна для виходу з додатку
+private Button button; // Змінна для кнопки
+private boolean styleFlag = false; // Змінна-перемикач для стилю кнопки
+private boolean exitFlag = false; // Змінна для виходу з додатку
 ```
 
 Крок 3.2: Метод `onCreate()`
@@ -47,7 +47,7 @@ protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    button = findViewById(R.id.click_me_button); // находжу кнопку за заданим id раніше
+    button = findViewById(R.id.click_me_button); // Находжу кнопку за заданим id раніше
     button.setOnClickListener(new View.OnClickListener() {
         // Встановлюємо слухач подій натискання на кнопку
         @Override
